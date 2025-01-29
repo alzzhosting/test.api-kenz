@@ -3,7 +3,7 @@ const app = express();
 
 app.use(express.json());
 
-app.get('/', (req, res) => {
+app.get('/api', (req, res) => {
     res.json({ 
         status: "success", 
         message: "API KenzDev berhasil diakses!",
