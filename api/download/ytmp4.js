@@ -5,7 +5,11 @@ export default async function handler(req, res) {
         const { url } = req.query;
 
         if (!url) {
-            return res.status(400).json({ status: 'error' });
+            return res.status(400).json({ 
+              status: "error",
+              message: "Error Apikey", 
+              hint: "Silahkan Cek Apikey"
+            });
         }
 
         try {
