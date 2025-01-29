@@ -1,7 +1,4 @@
 
-import fetch from 'node-fetch';
-import { XMLParser } from 'fast-xml-parser';
-
 export default async function handler(req, res) {
     try {
         // Fetch data dari RSS feed BMKG (URL feed gempa BMKG)
