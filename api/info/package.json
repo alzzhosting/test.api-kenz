@@ -2,7 +2,7 @@
   "name": "gempa-api",
   "version": "1.0.0",
   "description": "API untuk menampilkan data gempa terbaru dari BMKG",
-  "main": "index.js",
+  "main": "gempa.js",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
