@@ -9,7 +9,7 @@ module.exports = function(app) {
             throw error;
         }
     }
-    app.get('/ai/luminai', async (req, res) => {
+    app.get('/ai/kenz-ai', async (req, res) => {
         try {
             const { text } = req.query;
             if (!text) {
