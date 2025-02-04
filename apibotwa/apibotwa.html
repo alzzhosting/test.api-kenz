@@ -1,1 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple API's</title>
+  <link rel="stylesheet" href="/apibotwa/kenz.css"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="text-gray-200">
+  <audio autoplay>
+  <source src="/lagu.mp3" type="audio/mp3">
+  Your browser does not support the audio element.
+</audio>
 
+  <!-- Toggle Button -->
+  <button class="theme-toggle" onclick="toggleTheme()">
+    <i id="theme-icon" class="fas fa-moon"></i>
+  </button>
+
+  <div class="card">
+    <h2>API BOT WA</h2>
+    <span>WELCOME TO REST API KENZ MARKET GUNAKAN API NO LIMIT</span>
+  </div>
+
+  <div class="card">
+    <h1>Downloader API</h1>
+    
+    <div class="item" onclick="toggleLinkBox(1)">
+      <span>Tiktok API</span>
+      <i class="fas fa-arrow-circle-down"></i>
+    </div>
+    <div id="link-box-1" class="link-box">
+      <input type="text" id="link-1" value="https://apis.kenzdeveloper-gacor.biz.id/api/download/tiktokdl?url=" readonly>
+      <i class="fas fa-copy copy-btn" onclick="copyToClipboard(1)"></i>
+    </div>
+
+    <div class="item" onclick="toggleLinkBox(2)">
+      <span>Instagram API</span>
+      <i class="fas fa-arrow-circle-down"></i>
+    </div>
+    <div id="link-box-2" class="link-box">
+      <input type="text" id="link-2" value="https://apis.kenzdeveloper-gacor.biz.id/api/download/igdl?url=" readonly>
+      <i class="fas fa-copy copy-btn" onclick="copyToClipboard(2)"></i>
+    </div>
+
+    <div class="item" onclick="toggleLinkBox(3)">
+      <span>YouTube MP3 API</span>
+      <i class="fas fa-arrow-circle-down"></i>
+    </div>
+    <div id="link-box-3" class="link-box">
+      <input type="text" id="link-3" value="https://apis.kenzdeveloper-gacor.biz.id/api/download/ytmp3?url=" readonly>
+      <i class="fas fa-copy copy-btn" onclick="copyToClipboard(3)"></i>
+    </div>
+    
+    <div class="item" onclick="toggleLinkBox(4)">
+      <span>YouTube MP4 API</span>
+      <i class="fas fa-arrow-circle-down"></i>
+    </div>
+    <div id="link-box-4" class="link-box">
+      <input type="text" id="link-4" value="https://apis.kenzdeveloper-gacor.biz.id/api/download/ytmp4?url=" readonly>
+      <i class="fas fa-copy copy-btn" onclick="copyToClipboard(4)"></i>
+    </div>
+
+
+    <div class="item" onclick="toggleLinkBox(5)">
+      <span>Facebook API</span>
+      <i class="fas fa-arrow-circle-down"></i>
+    </div>
+    <div id="link-box-5" class="link-box">
+      <input type="text" id="link-5" value="https://apis.kenzdeveloper-gacor.biz.id/api/download/facebookdl?url=" readonly>
+      <i class="fas fa-copy copy-btn" onclick="copyToClipboard(5)"></i>
+    </div>
+
+    <div class="item" onclick="toggleLinkBox(6)">
+      <span>Google Drive API</span>
+      <i class="fas fa-arrow-circle-down"></i>
+    </div>
+    <div id="link-box-6" class="link-box">
+      <input type="text" id="link-6" value="https://apis.kenzdeveloper-gacor.biz.id/api/download/gdrive?url=" readonly>
+      <i class="fas fa-copy copy-btn" onclick="copyToClipboard(6)"></i>
+    </div>
+    </div>
+    
+  <div class="card">
+    <h1>AI API</h1>
+    
+    <div class="item" onclick="toggleLinkBox(7)">
+      <span>Open AI API</span>
+      <i class="fas fa-arrow-circle-down"></i>
+    </div>
+    <div id="link-box-7" class="link-box">
+      <input type="text" id="link-7" value="https://apis.kenzdeveloper-gacor.biz.id/api/ai/gpt-4?query=" readonly>
+      <i class="fas fa-copy copy-btn" onclick="copyToClipboard(7)"></i>
+    </div>
+
+  </div>
+
+  <!-- Custom Popup -->
+  <div id="popup" class="popup">Link copied! 🎉</div>
+
+  <script src="/apibotwa/kenz.js"></script>
+
+</body>
+</html>
