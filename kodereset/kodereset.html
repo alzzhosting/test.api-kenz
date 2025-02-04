@@ -1,1 +1,21 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Masukkan Kode Reset</title>
+<link rel="stylesheet" href="/kodereset/kodereset.css"/>
+</head>
+<body>
+  <div class="reset-container">
+    <h1>Masukkan Kode Reset</h1>
+    <p>Masukkan kode reset yang Anda terima di email:</p>
+    <form id="resetForm" onsubmit="checkResetCode(event)">
+      <input type="text" id="resetCode" class="input-field" placeholder="Kode Reset" required>
+      <button type="submit">Verifikasi Kode</button>
+    </form>
+  </div>
 
+  <script src="/kodereset/kodereset.js"></script>
+</body>
+</html>
