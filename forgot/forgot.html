@@ -1,1 +1,22 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forgot Password</title>
+  <link rel="stylesheet" href="/forgot/forgot.css"/>
+</head>
+<body>
+  <div class="forgot-container">
+    <h1>Reset Password</h1>
+    <p>Masukkan alamat email Anda untuk menerima kode reset password:</p>
+    <form id="forgotPasswordForm" onsubmit="sendEmail(event)">
+      <input type="email" id="email" name="email" class="input-field" placeholder="Email" required>
+      <button type="submit">Kirim Kode Reset</button>
+    </form>
+    <a href="index.html" class="back-button">Kembali ke Halaman Login</a>
+  </div>
 
+  <script src="forgot/forgot.js"></script>
+</body>
+</html>
